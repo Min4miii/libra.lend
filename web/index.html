@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/95d194ff11.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="./images/logo-ico.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <title>LibraLend</title>
+</head>
+<body>
+    <div class="cover" id="home">
+        <header>
+            <div id="logo">
+                <img src="./images/logo-nobg.png" alt="logo" width="100px">
+                <h1>Libra<span>Lend</span></h1>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="#home" class="elements">Home</a></li>
+                    <li><a href="#abt" class="elements">About</a></li>
+                    <li><a href="#contact" class="elements">Contacts</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="login-form">
+            <div class="banner">
+                <h1>Borrowing Made Simple, <span>Reading Made Rich</span>.</h1>
+                <p>LibraLend transforms the borrowing experience, making it effortless and efficient. Our user-friendly platform makes it easy to access a vast library of books with a single click.
+                </p>
+            </div>
+            <form action="" id="log">
+                <div>
+                    <h1>Log In</h1>
+                </div>
+                <div class="content">
+                    <label for="">username</label>
+                    <input type="text" class="user" autocomplete="off" required>
+                    <label for="">password</label>
+                    <input type="password" autocomplete="off" required>
+                </div>
+                <div class="log-in">
+                    <input type="button" value="Log in">
+                </div>
+                <div class="labels">
+                    <label for="" class="dont">Don't have an account? <input type="button" value="Register" onclick="login()"></label>
+                    <a href="" class="fp">Forgot Password?</a>
+                </div>
+            </form>
+            <form action="" id="reg" style="display: none;">
+                <div><h1>Register</h1></div>
+                <div class="content">
+                    <label for="">full name</label>
+                    <input type="text" autocomplete="off" required>
+                    <label for="">library ID</label>
+                    <input type="text" autocomplete="off" required>
+                    <label for="">username</label>
+                    <input type="text" autocomplete="off" required>
+                    <label for="">password</label>
+                    <input type="password" autocomplete="off" required>
+                </div>
+                <div class="log-in">
+                    <input type="button" value="Register">
+                </div>
+                <div class="labels">
+                    <label for="" class="dont">Already have an acoount? <input type="button" value="Login" onclick="register()"></label>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="about" id="abt">
+        <h1 id="about" class="reveal">About</h1>
+        <div class="info reveal">
+            <div class="container">
+                <img src="./images/mission.png" alt="mission">
+                <h1>Mission</h1>
+                <p><b>LibraLend</b> is to promote literacy and lifelong learning by providing easy access to a diverse range of reading materials for our users. We believe that everyone should have the opportunity to explore the world of literature and expand their knowledge through reading.</p>
+            </div>
+            <div class="container">
+                <img src="./images/overview.png" class="m" alt="overview">
+                <h1>Overview</h1>
+                <p><b>LibraLend</b> is a user-friendly platform designed to simplify the borrowing process for readers of all ages. With our extensive collection of books spanning various genres and subjects, users can easily <u>discover</u>,<u> borrow</u> , and <u>enjoy</u> their favorite reads from the comfort of their own homes.</p>
+            </div>
+            <div class="container">
+                <img src="./images/history.png" alt="history">
+                <h1>History</h1>
+                <p>Established in <u>2024</u>, LibraLend has been dedicated to connecting readers with books since its inception. What started as a passion project has evolved into a comprehensive borrowing system, serving thousands of users across <b>Occidental Mindoro State College - Mamburao Campus</b>.</p>
+            </div>
+        </div>
+        <div class="reveal">
+            <h1>Team</h1>
+        </div>
+        <div class="creator reveal" >
+            <div class="crtr">
+                <img src="./images/mypic-fotor-20240322103239.jpg" alt="">
+                <div class="icons">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                </div>
+                <h1>Shane Rey Nepomuceno</h1>
+            </div>
+            <div class="crtr">
+                <img src="./images/lennox-fotor-20240322103023.jpg" alt="">
+                <div class="icons">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                </div>
+                <h1>Lennox Pedraza</h1>
+            </div>
+            <div class="crtr">
+                <img src="./images/jera-fotor-20240322101745.jpg" alt="">
+                <div class="icons">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                </div>
+                <h1>Jera Rejane Cassandra Corteza</h1>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <form action="https://api.web3forms.com/submit" method="POST" id="cntct" class="reveal">
+            <h1>Contact</h1>
+            <div class="cntnt">
+                <input type="hidden" name="access_key" value="302be584-3f4d-48db-92b0-59f1224241f6">
+                <label for="">name</label>
+                <input type="text" name="name" autocomplete="off" required>
+                <label for="">email</label>
+                <input type="email" name="email" autocomplete="off" required>
+                <label for="">message</label>
+                <textarea name="message" id="txtarea" cols="30" rows="10"></textarea>
+                <input type="submit" value="send message" id="btnn">
+            </div>
+        </form>
+    </div>
+    <footer class="information">
+        <div class="p">
+            <i class="fa-solid fa-user"></i>
+            <p>LibraLend : Shane Rey Nepomuceno</p>
+        </div>
+        <div class="p">
+            <i class="fa-solid fa-envelope"></i>
+            <p>nshanerey@gmail.com</p>
+        </div>
+        <div class="p">
+            <i class="fa-solid fa-phone"></i>
+            <p>+63-995-8714-009</p>
+        </div>
+        <div class="p">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Mamburao, Occidental Mindoro</p>
+        </div>
+    </footer>
+    <footer class="bottom">
+        <p>Copyright © 2024 All rights reserved.</p>
+    </footer>
+</body>
+</html>
