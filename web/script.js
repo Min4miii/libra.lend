@@ -13,6 +13,18 @@ function reveal(){
         }
     }
 }
+function nav(){
+    let navigation = document.querySelector('.nav');
+
+    navigation.style.display = "inline";
+    navigation.classList.add('act');
+}
+function navback(){
+    let back = document.querySelector('.nav');
+
+    back.style.display = "none";
+    back.classList.remove('act');
+}
 
 
 

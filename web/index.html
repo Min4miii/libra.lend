@@ -27,6 +27,17 @@
                     <li><a href="#contact" class="elements">Contacts</a></li>
                 </ul>
             </div>
+            <div class="nav">
+                <div id="r-menu">
+                    <ul>
+                        <li><button type="button" onclick="navback()"><i class="fa-solid fa-greater-than fa-2x"></i></button></li>
+                        <li><a href="#home" class="elements">Home</a></li>
+                        <li><a href="#abt" class="elements">About</a></li>
+                        <li><a href="#contact" class="elements">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" onclick="nav()"><i class="fa-solid fa-bars fa-2x"></i></button>
         </header>
         <div class="login-form">
             <div class="banner">
@@ -68,7 +79,7 @@
                     <input type="button" value="Register">
                 </div>
                 <div class="labels">
-                    <label for="" class="dont">Already have an acoount? <input type="button" value="Login" onclick="register()"></label>
+                    <label for="" class="dont">Already have an account? <input type="button" value="Login" onclick="register()"></label>
                 </div>
             </form>
         </div>
@@ -133,7 +144,8 @@
                 <input type="email" name="email" autocomplete="off" required>
                 <label for="">message</label>
                 <textarea name="message" id="txtarea" cols="30" rows="10"></textarea>
-                <input type="submit" value="send message" id="btnn">
+                <button type="submit" value="send message" id="btnn" ><i class="fa-solid fa-paper-plane" style="margin-right: 12px;"></i>send message</button>
+                <input>
             </div>
         </form>
     </div>
