@@ -1,3 +1,32 @@
+<?php
+    session_start();
+    include("db.php");
+
+    if($_SERVER['REQUEST_METHOD'] == "POST"){
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+
+        if(!empty($email) && !empty($password) && !is_numeric($email)){
+            $query = "select * from form where email = '$email' limit 1";
+            $result = mysqli_query($con, $query);
+
+            if($result){
+                if($result && mysqli_num_rows($result) > 0){
+
+                    $user_data = mysqli_fetch_assoc($result);
+
+                    if($user_data['password'] == $password){
+                        header("location: logged_in.php");
+                        die;
+                    }
+                }
+            }
+            echo "<script type='text/javascript'> alert('wrong email or password'); </script>";
+        } else {
+            echo "<script type='text/javascript'> alert('wrong email or password'); </script>";
+        }
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,41 +74,24 @@
                 <p>LibraLend transforms the borrowing experience, making it effortless and efficient. Our user-friendly platform makes it easy to access a vast library of books with a single click.
                 </p>
             </div>
-            <form action="" id="log">
+            <form action="" method="POST" id="log">
                 <div>
                     <h1>Log In</h1>
                 </div>
                 <div class="content">
-                    <label for="">username</label>
-                    <input type="text" class="user" autocomplete="off" required>
-                    <label for="">password</label>
-                    <input type="password" autocomplete="off" required>
+                    <label for="email">email</label>
+                    <input type="text"  name="email" class="user" autocomplete="off" required>
+                    <p id="em"></p>
+                    <label for="password">password</label>
+                    <input type="password" name="password"  autocomplete="off" required>
+                    <p id="pw"></p>
                 </div>
                 <div class="log-in">
-                    <input type="button" value="Log in">
+                    <input type="submit" value="Log in">
                 </div>
                 <div class="labels">
-                    <label for="" class="dont">Don't have an account? <input type="button" value="Register" onclick="login()"></label>
+                    <label for="" class="dont">Don't have an account? <a href="register.php">Register</a></label>
                     <a href="" class="fp">Forgot Password?</a>
-                </div>
-            </form>
-            <form action="" id="reg" style="display: none;">
-                <div><h1>Register</h1></div>
-                <div class="content">
-                    <label for="">full name</label>
-                    <input type="text" autocomplete="off" required>
-                    <label for="">library ID</label>
-                    <input type="text" autocomplete="off" required>
-                    <label for="">username</label>
-                    <input type="text" autocomplete="off" required>
-                    <label for="">password</label>
-                    <input type="password" autocomplete="off" required>
-                </div>
-                <div class="log-in">
-                    <input type="button" value="Register">
-                </div>
-                <div class="labels">
-                    <label for="" class="dont">Already have an account? <input type="button" value="Login" onclick="register()"></label>
                 </div>
             </form>
         </div>

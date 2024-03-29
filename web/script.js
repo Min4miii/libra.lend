@@ -19,6 +19,11 @@ function nav(){
     navigation.style.display = "inline";
     navigation.classList.add('act');
 }
+let width = window.innerWidth;
+if(width > 600){
+    navigation.style.display = "none";
+    navigation.classList.remove('act');
+}
 function navback(){
     let back = document.querySelector('.nav');
 
