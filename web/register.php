@@ -37,30 +37,9 @@
     <title>Register</title>
 </head>
 <body>
-    <header>
-        <div id="logo">
-            <img src="./images/logo-nobg.png" alt="logo" width="100px">
-            <h1>Libra<span>Lend</span></h1>
-        </div>
-        <div id="menu">
-            <ul>
-                <li><a href="#home" class="elements">Home</a></li>
-                <li><a href="#abt" class="elements">About</a></li>
-                <li><a href="#contact" class="elements">Contacts</a></li>
-            </ul>
-        </div>
-        <div class="nav">
-            <div id="r-menu">
-                <ul>
-                    <li><button type="button" onclick="navback()"><i class="fa-solid fa-greater-than fa-2x"></i></button></li>
-                    <li><a href="#home" class="elements">Home</a></li>
-                    <li><a href="#abt" class="elements">About</a></li>
-                    <li><a href="#contact" class="elements">Contacts</a></li>
-                </ul>
-            </div>
-        </div>
-        <button type="button" onclick="nav()"><i class="fa-solid fa-bars fa-2x"></i></button>
-    </header>
+    <?php
+        include("header.php");
+    ?>
     <div class="cover" id="id">
         <form action="" method="POST" id="reg">
             <div><h1>Register</h1></div>

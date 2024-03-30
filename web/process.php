@@ -12,6 +12,5 @@
         }else{
             echo "Email sending failed.";
         }
-
     }
 ?>

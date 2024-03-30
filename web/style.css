@@ -14,6 +14,7 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
+    margin-top: 40px;
 }
 /* .cover::before {
     content: "";
@@ -135,14 +136,14 @@ header button {
    margin: 16px 0;
 }
 .content label {
-    color: #0b6317;
+    color: #123499;
 }
  form div h1 {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
     margin: 16px 0 8px 0;
-    color: #0b6317;
+    color: #123499;
  }
  .content .user {
     margin-bottom: 16px;
@@ -183,7 +184,7 @@ header button {
     width: 230px;
     height: 36px;
     margin-bottom: 16px;
-    background: #0b6317;
+    background: #123499;
     border: none;
     border-radius: 5px;
     color: #fffafa;
@@ -268,16 +269,16 @@ form {
  }
  .labels .fp {
     margin-top: 7px;
-    color: #119924;
+    color: #123499;
  }
  .dont {
     font-size: 12px;
     padding-bottom: 8px;
-    color: #119924;
+    color: #123499;
  }
  .dont a {
     text-decoration: none;
-    color: #123499;
+    color: #0b6317;
  }
  input, textarea {
     font-size: 14px;
@@ -408,7 +409,7 @@ form {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
-    color: #0b6317;
+    color: #123499;
     margin: 0;
 }
 .cntnt {
@@ -417,7 +418,7 @@ form {
     flex-direction: column;
 }
 .cntnt label {
-    color: #0b6317;
+    color: #123499;
     font-size: 14px;
 }
 .cntnt input, .cntnt textarea {
@@ -436,7 +437,7 @@ form {
     font-size: 16px;
     width: 280px;
     height: 36px;
-    background: #0b6317;
+    background: #123499;
     border: none;
     border-radius: 5px;
     color: #fffafa;
@@ -489,9 +490,6 @@ body{
 }
 .nav {
     display: none;
-}
-#reg {
-    margin-top: -60px;
 }
 @media only screen and (max-width: 600px){
     .cover{
